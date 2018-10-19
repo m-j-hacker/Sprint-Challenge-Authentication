@@ -17,7 +17,7 @@ module.exports = server => {
 };
 
 function register(req, res) {
-  // implement user registration
+
   const credentials = req.body;
   console.log(credentials);
 
@@ -70,7 +70,7 @@ function getJokes(req, res) {
 }
 
 function generateToken(user) {
-  
+
   const jwtPayload = {
     ...user,
     hello: 'FSW13',
